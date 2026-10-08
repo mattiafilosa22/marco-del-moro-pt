@@ -50,6 +50,7 @@ jobs:
         vercel-token: ${{ secrets.VERCEL_TOKEN }}
         vercel-org-id: ${{ secrets.VERCEL_ORG_ID }}
         vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID }}
+        vercel-version: latest   # la CLI di default dell'action è troppo vecchia: l'API di Vercel la rifiuta
         working-directory: ./
         scope: ${{ secrets.VERCEL_ORG_ID }}
         vercel-args: '--prod --confirm'
